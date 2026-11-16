@@ -1,0 +1,36 @@
+
+# Secrets and credentials
+.env
+.env.*
+!.env.example
+*credentials*
+*secret*
+*token*
+
+# Certificates and private keys
+*.pem
+*.key
+*.p12
+*.pfx
+
+# Logs
+*.log
+logs/
+
+# Python
+__pycache__/
+*.pyc
+.venv/
+venv/
+
+# Temporary files
+*.tmp
+*.bak
+*.swp
+
+# Executable build files
+*.exe
+
+# OS files
+.DS_Store
+Thumbs.db
