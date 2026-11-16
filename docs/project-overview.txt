@@ -1,0 +1,19 @@
+Project: Self-Healing SOC
+Purpose:
+Automate threat detection and response using Wazuh,
+n8n, VirusTotal, and Python.
+
+Environment:
+- Kali Linux: Wazuh Manager and n8n
+- Windows 11 VM: Wazuh Agent
+- VirusTotal: File hash reputation checking
+- Python: Quarantine script
+
+Workflow:
+1. Wazuh detects suspicious file activity.
+2. n8n receives the alert.
+3. VirusTotal checks the file hash.
+4. If the configured malicious-verdict condition is met,
+   n8n triggers Wazuh Active Response.
+5. Python script moves the test file from C:\SOC-Test
+   to C:\SOC-Quarantine.

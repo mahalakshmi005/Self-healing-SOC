@@ -1,0 +1,21 @@
+Wazuh Configuration Notes
+
+Wazuh Manager:
+- Runs on Kali Linux.
+- API Port: 55000.
+- API Version: 4.7.5.
+
+Windows Agent:
+- Agent ID: 004.
+- Agent Name: Windows-11.
+- Monitored test folder: C:\SOC-Test.
+
+Active Response:
+- Custom executable: wazuh_quarantine_ar.exe
+- Script source: Python.
+- Quarantine folder: C:\SOC-Quarantine.
+
+Security:
+- Active Response is restricted to files inside C:\SOC-Test.
+- Only files with the expected confirmation argument are processed.
+- Test using harmless files in a controlled lab.
